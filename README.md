@@ -1,6 +1,8 @@
 # Gene Regulatory Network Inference in the Presence of Dropouts: a Causal View
 
-[Paper](https://arxiv.org/abs/2403.15500): *The first to deal with dropouts fully nonparametrically: conditional independence (CI) relations in the data with dropouts, after deleting the samples with zero values for conditioned variables, are identical to the CI relations in the original data. Appears at ICLR 2024 (oral).*
+[Paper](https://arxiv.org/abs/2403.15500) by [Haoyue Dai](https://hyda.cc), [Ignavier Ng](https://ignavierng.github.io/), [Gongxu Luo](https://scholar.google.com/citations?hl=zh-CN&user=1qoKnMQAAAAJ&view_op=list_works&sortby=pubdate), [Peter Spirtes](https://www.cmu.edu/dietrich/philosophy/people/faculty/spirtes.html), [Petar Stojanov](http://petar-stojanov.com/), [Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/index.html). Appears at ICLR 2024 (oral).
+
+*The first to deal with dropouts fully nonparametrically: conditional independence (CI) relations in the data with dropouts, after deleting the samples with zero values for conditioned variables, are identical to the CI relations in the original data.*
 
 ## 1. To reproduce the simulation results in the paper:
 
