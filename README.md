@@ -1,3 +1,7 @@
+# Gene Regulatory Network Inference in the Presence of Dropouts: a Causal View
+
+[Paper](https://arxiv.org/abs/2403.15500): *The first to deal with dropouts fully nonparametrically: conditional independence (CI) relations in the data with dropouts, after deleting the samples with zero values for conditioned variables, are identical to the CI relations in the original data. Appears at ICLR 2024 (oral).*
+
 ## 1. To reproduce the simulation results in the paper:
 
 ### 1.1. Generate the random graphs:
@@ -49,3 +53,20 @@ For the details of reframing the GES by CI tests without any score functions (an
 Please refer to e.g., line 177-228 block and line 255-294 block in `./csl/utils/cit.py` for the details in zero-deleted CI tests (implemented based on [this repo](https://github.com/py-why/causal-learn)).
 
 Note that given our causal dropout models, the current codes only delete data samples with zeroes in conditioning variables. You may also try to delete data samples with zeroes in all involved variables (i.e., X, Y, and the conditioning variables), which is still correct (according to Def 2 and Thm 2 in the paper), though it may be less powerful with fewer sample size.
+
+
+
+
+## Citation
+
+If you use this code for your research, please cite our paper:
+
+```bibtex
+@inproceedings{dai2024gene,
+  title={Gene Regulatory Network Inference in the Presence of Dropouts: a Causal View},
+  author={Haoyue Dai and Ignavier Ng and Gongxu Luo and Petar Stojanov and Peter Spirtes and Kun Zhang},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024},
+  url={https://openreview.net/forum?id=gFR4QwK53h}
+}
+```
